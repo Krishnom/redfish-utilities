@@ -61,10 +61,13 @@ if 'all' in include_config:
     exit(0)
 else:
     if 'cpu' in include_config:
-        print(get_boot_attributes(remote_host, redfish_username, redfish_password))
+        print(get_cpu_attributes(remote_host, redfish_username, redfish_password))
 
     if 'memory' in include_config:
         print(get_memory_attributes(remote_host, redfish_username, redfish_password))
 
     if 'bios' in include_config:
-        print(get_bios_attributes(remote_host, redfish_username, redfish_password))
+        print(get_bios_settings(remote_host, redfish_username, redfish_password))
+
+    if 'boot' in include_config:
+        print(get_boot_attributes(remote_host, redfish_username, redfish_password))
