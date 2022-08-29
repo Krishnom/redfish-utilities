@@ -1,7 +1,14 @@
 ### How to test with mock redfish api
 
+#### setup python virtualenv
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
-## Start mock server
+####  Start mock server
+Open another shell and run below commands. 
 ```bash
 git clone https://github.com/DMTF/Redfish-Mockup-Server
 cd Redfish-Mockup-Server
