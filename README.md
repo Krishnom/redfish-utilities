@@ -17,3 +17,7 @@ cd redfish-utilities && pip install -r requirements.txt
 
 python main.py --url 'http://127.0.0.1:9099' 
 ```
+
+
+## Get All/CPU/Memory/Storage/NIC/Boot/Bios settings 
+To get individual settings, run below command
